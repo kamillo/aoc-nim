@@ -4,7 +4,7 @@ proc getLines*(file: string): seq[string] =
         input: File
         line: string
 
-    if open(input, "input.txt"):
+    if open(input, file):
         while input.readLine(line):
             result.add(line)
 
